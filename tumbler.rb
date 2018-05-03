@@ -31,13 +31,13 @@ post "/sign-in" do
     session[:user_id] = @user.id
 
     # lets the user know that something is wrong
-    flash[:info] = "#{@user.username} have been signed in"
+    flash[:info] = "Welcome back #{@user.username}!"
 
     # redirects to the home page
     redirect "/"
   else
     # lets the user know that something is wrong
-    flash[:warning] = "Your username or password is incorrect"
+    flash[:warning] = "Your username or password is incorrect!"
 
     # if user does not exist or password does not match then
     #   redirect the user to the sign in page
@@ -50,7 +50,6 @@ end
 #   username, password
 
 get "/sign-up" do
-
   erb :sign_up
 end
 
@@ -64,7 +63,7 @@ post "/sign-up" do
   session[:user_id] = @user.id
 
   # lets the user know they have signed up
-  flash[:info] = "Thank you #{@user.username} for signing up"
+  flash[:info] = "Thank you #{@user.username} for signing up."
 
   # assuming this page exists
   redirect "/"

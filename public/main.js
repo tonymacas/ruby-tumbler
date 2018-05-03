@@ -1,3 +1,11 @@
+M.AutoInit();
+
+document.addEventListener('DOMContentLoaded' function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+
 let closeButton = document.querySelector(".close-button")
 let flashPanel = document.querySelector(".flash")
 

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
 
+#main {
+    background-color: #2196f3;
+}
 body {
   font-family: 'Do Hyeon', sans-serif;
 }
@@ -56,6 +59,39 @@ ul {
   }
 }
 
-#firstname {
-    color: blue;
+#travel {
+    width: 100%;
+    height: 100%;
+}
+
+#create {
+    background-image: url("images/travelvan.jpg");
+}
+
+#signup {
+    background-image: url("images/vanture.jpg");
+}
+
+.signup-card {
+    padding-top: 30px;
+padding-left: 600px;
+padding-bottom: 100px;
+}
+
+#signin {
+    background-image: url("images/vanture.jpg");
+}
+
+.signin-card {
+padding-top: 30px;
+padding-left: 600px;
+padding-bottom: 100px;
+}
+
+#signedouthp {
+    background-image: url("images/vanture.jpg")
+}
+
+.nomad-img {
+    padding-top:250px;
 }
