@@ -64,34 +64,21 @@ ul {
     height: 100%;
 }
 
-#create {
-    background-image: url("images/travelvan.jpg");
-}
-
-#signup {
-    background-image: url("images/vanture.jpg");
-}
-
-.signup-card {
-    padding-top: 30px;
-padding-left: 600px;
-padding-bottom: 100px;
-}
-
-#signin {
-    background-image: url("images/vanture.jpg");
-}
-
-.signin-card {
+.signin-card, .signup-card {
 padding-top: 30px;
 padding-left: 600px;
 padding-bottom: 100px;
 }
 
-#signedouthp {
-    background-image: url("images/vanture.jpg")
+#nomad-img {
+  width:200%;
 }
 
-.nomad-img {
-    padding-top:250px;
+#signedinhp {
+    align-items: center;
+}
+
+#signinimage {
+  width: 100%;
+  height: 100%;
 }

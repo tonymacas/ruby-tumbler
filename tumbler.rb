@@ -4,8 +4,14 @@ require "sinatra/flash"
 require "./models"
 
 enable :sessions
+configure :development do
+  set :database, "sqlite3:app.db"
+end
 
-set :database, "sqlite3:app.db"
+configure :production do
+set :database, ENV["DATABASE_URL"]
+end
+
 
 get "/" do
   if session[:user_id]
